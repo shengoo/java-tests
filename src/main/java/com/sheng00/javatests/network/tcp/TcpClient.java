@@ -1,4 +1,4 @@
-package network.tcp;
+package com.sheng00.javatests.network.tcp;
 
 import java.io.*;
 import java.net.Socket;

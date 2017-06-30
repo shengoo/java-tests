@@ -1,19 +1,13 @@
-package network.tcp;
+package com.sheng00.javatests.network.tcp;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- *
- * @author Qing
- *
- */
+
 public class TcpTest {
 
-    /**
-     * @param args
-     */
+
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         TcpServer1 server = new TcpServer1();
@@ -46,11 +40,11 @@ class TcpServer1 extends Thread {
             server.close();
             listen.close();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 
-    byte[] caculate(int ra) {
+    private byte[] caculate(int ra) {
         double result = (ra * ra * Math.PI);
         return Double.toString(result).getBytes();
     }

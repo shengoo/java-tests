@@ -1,11 +1,9 @@
-package network.udp;
+package com.sheng00.javatests.network.udp;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
-/**
- * Created by UC206612 on 6/30/2017.
- */
+
 public class UdpServer {
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
@@ -36,7 +34,7 @@ public class UdpServer {
         }
     }
 
-    static String caculate(String ra) {
+    private static String caculate(String ra) {
         int radius = Integer.parseInt(ra);
         return Double.toString(radius * radius * Math.PI);
     }

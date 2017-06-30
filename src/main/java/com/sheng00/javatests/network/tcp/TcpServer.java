@@ -1,4 +1,4 @@
-package network.tcp;
+package com.sheng00.javatests.network.tcp;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -7,8 +7,8 @@ import java.net.Socket;
 
 public class TcpServer implements Runnable {
 
-    public static int PORT_NO = 10086;
-    Socket socket;
+    static int PORT_NO = 10086;
+    private Socket socket;
 
     public TcpServer(Socket socket) {
         super();

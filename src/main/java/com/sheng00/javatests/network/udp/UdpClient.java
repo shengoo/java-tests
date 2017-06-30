@@ -1,13 +1,10 @@
-package network.udp;
+package com.sheng00.javatests.network.udp;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Scanner;
 
-/**
- * Created by UC206612 on 6/30/2017.
- */
 public class UdpClient {
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
@@ -28,7 +25,7 @@ public class UdpClient {
 
             DatagramPacket dataPack = new DatagramPacket(Integer.toString(
                     radius).getBytes(), Integer.toString(radius).length(),
-                    InetAddress.getByName("127.0.0.1"), new Integer(serverPort));
+                    InetAddress.getByName("127.0.0.1"), serverPort);
             sendSocket.send(dataPack);
             System.out.println("Client send:\t" + radius);
 
